@@ -1,0 +1,2 @@
+1-stateful  -> like person or product objects
+2-stateless -> like service that make arthmetic operation over inputs + - *

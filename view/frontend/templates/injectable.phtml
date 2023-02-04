@@ -1,0 +1,18 @@
+<?php /** @var \Magento\Backend\Block\Template $block */ ?>
+
+<h2>Examples : </h2>
+
+<h3>Injectable</h3>
+<p>
+    <?= $block->getViewModel()->getSupplier()->getItem()->getBarCode(); ?>
+</p>
+<p>
+    <?= $block->getViewModel()->getDemand()->getItem()->getBarCode(); ?>
+</p>
+
+<h3>Non-injectable</h3>
+<p>
+    <?= $block->getViewModel()->getSupplier()->getProductFactory()->getBarCode(); ?>
+</p><p>
+    <?= $block->getViewModel()->getDemand()->getProductFactory()->getBarCode(); ?>
+</p>
